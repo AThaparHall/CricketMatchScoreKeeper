@@ -1,0 +1,14 @@
+<resources>
+    <string name="action_settings">Cricket Match Score Keeper</string>
+    <string name="app_name">Cricket Match Score Keeper</string>
+    <string name="button_six_runs_india">6 Runs</string>
+    <string name="button_four_runs_india">4 Runs</string>
+    <string name="button_two_runs_india">2 Runs</string>
+    <string name="button_one_runs_india">1 Run</string>
+    <string name="button_no_runs_india">No Runs</string>
+    <string name="button_six_runs_pak">6 Runs</string>
+    <string name="button_four_runs_pak">4 Runs</string>
+    <string name="button_two_runs_pak">2 Runs</string>
+    <string name="button_one_runs_pak">1 Run</string>
+    <string name="button_no_runs_pak">No Runs</string>
+</resources>

@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="INDIA"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team_india_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:textSize="56sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-light"
+                android:text="0" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addSixRunsIndia"
+                android:text="@string/button_six_runs_india" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addFourRunsIndia"
+                android:text="@string/button_four_runs_india" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addTwoRunsIndia"
+                android:text="@string/button_two_runs_india" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addOneRunIndia"
+                android:text="@string/button_one_runs_india" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addZeroIndia"
+                android:text="@string/button_no_runs_india" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/myRectangleView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.18"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="PAKISTAN"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team_pak_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="56sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="24dp"
+                android:text="0" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addSixRunsPak"
+                android:text="@string/button_six_runs_pak" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addFourRunsPak"
+                android:text="@string/button_four_runs_pak" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addTwoRunsPak"
+                android:text="@string/button_two_runs_pak" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:gravity="center"
+                android:onClick="addOneRunPak"
+                android:text="@string/button_one_runs_pak" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addZeroPak"
+                android:text="@string/button_no_runs_pak" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/india"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="Reset"
+        android:text="RESET"
+        android:layout_marginBottom="32dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pakistan"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" />
+</RelativeLayout>
